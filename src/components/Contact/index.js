@@ -45,7 +45,7 @@ function ContactForm() {
 
     return(
         <section onSubmit={handleSubmit}>
-            <h1>Contact Me</h1>
+            <h1 aria-label="text">Contact Me</h1>
             <form id="contact-form">
                 <div>
                     <label htmlFor="name">Name:</label>
