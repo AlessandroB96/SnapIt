@@ -22,7 +22,7 @@ function App() {
         currentCategory={currentCategory}
         ></Nav>
         <main>
-          <Gallary></Gallary>
+          <Gallary currentCategory={currentCategory}></Gallary>
           <About></About>
         </main>
       </div>
