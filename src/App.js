@@ -7,16 +7,16 @@ import ContactForm from './components/Contact';
 //initial value of contactSelected is false to prevent contact form from showing when user loads page. Gallery will be the first thing a user sees 
 function App() {
   
-  const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
     { name: 'commercial', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
     { name: 'portraits', description: 'Portraits of people in my life' },
     { name: 'food', description: 'Delicious delicacies' },
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
-
+  
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+  
+  const [contactSelected, setContactSelected] = useState(false);
   return (
       <div>
         <Nav
